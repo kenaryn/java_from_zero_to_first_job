@@ -1,0 +1,1 @@
+memberSearchIndex = [{"p":"vsca","c":"Euler1","l":"Euler1()","u":"%3Cinit%3E()"},{"p":"vsca","c":"Euler1","l":"findMultiples()"},{"p":"vsca","c":"Euler1","l":"main(String[])","u":"main(java.lang.String[])"}];updateSearchResults();
