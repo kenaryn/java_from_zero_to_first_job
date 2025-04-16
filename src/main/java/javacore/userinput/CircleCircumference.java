@@ -8,7 +8,6 @@ public class CircleCircumference {
     public static void main(String[] args) {
         Scanner scan = new Scanner(System.in);
         System.out.print("Enter a circle's radius: ");
-//        double radius = Double.parseDouble(scan.nextLine());
 
         BigDecimal radius = new BigDecimal("0.00");
         try {
@@ -18,8 +17,7 @@ public class CircleCircumference {
             System.err.println("Invalid format argument: " + ex.getMessage());
         }
 
-//        System.out.println("Circle's circumference: " + (radius.multiply(BigDecimal.valueOf(Math.TAU))).setScale(2) + "cm²");
-        System.out.println("Circle's circumference: " +
-                (radius.multiply(BigDecimal.valueOf(Math.TAU))).setScale(2, RoundingMode.HALF_UP) + "cm²");
+        BigDecimal circumference = radius.multiply(BigDecimal.valueOf(Math.TAU)).setScale(2, RoundingMode.HALF_UP);
+        System.out.println("Circle's circumference: " + circumference + "cm²");
     }
 }
